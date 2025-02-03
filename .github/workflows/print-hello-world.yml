@@ -1,0 +1,18 @@
+name: Print Hello World
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  print_hello:
+    name: printing Hello
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+      - uses: actions/checkout@v4
+      - name: Print Hello World
+      - run: echo "Hello World" 
+      
