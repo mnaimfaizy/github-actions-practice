@@ -7,9 +7,7 @@ on:
 
 jobs:
   print_hello:
-    name: printing Hello
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: Print Hello World
